@@ -21,10 +21,18 @@
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0,0,0,0.5);
       width: 300px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #e74c3c; /* красный цвет для MTS Link */
+      margin-bottom: 20px;
+      font-size: 24px;
     }
 
     h2 {
       text-align: center;
+      margin-bottom: 15px;
     }
 
     label {
@@ -46,7 +54,7 @@
       width: 100%;
       padding: 10px;
       margin-top: 15px;
-      background-color: #4CAF50;
+      background-color: #e74c3c; /* красная кнопка */
       border: none;
       color: white;
       border-radius: 5px;
@@ -55,16 +63,18 @@
     }
 
     button:hover {
-      background-color: #45a049;
+      background-color: #c0392b; /* чуть темнее при наведении */
     }
   </style>
 </head>
 <body>
 
   <form action="https://formspree.io/f/xpwzvyrw" method="POST">
+    <h1>MTS Link</h1>
     <h2>Анкета мероприятия</h2>
     <label>Имя: <input type="text" name="Имя" required></label>
     <label>Фамилия: <input type="text" name="Фамилия" required></label>
+    <label>Email: <input type="email" name="Email" required></label>
     <button type="submit">Отправить</button>
   </form>
 
